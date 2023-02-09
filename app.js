@@ -11,14 +11,12 @@ const audio = document.querySelector('audio'),
     mute = document.querySelector('#mute'),
     volume = document.querySelector('#volume'),
     songs = [
-        'Meni_Jannatlarga_Yetaklang_Juftim.hd',
+        'Billie Eilish - Goldwing',
+        'FreeFlowFlava - 014',
+        'Izzamusic - Shootout',
+        'Konsta - Astrum',
         "Izzat Shukurov - Rasulullohni Sog'inganda",
-        "99 Names of Allah Subhana Wa Ta'ala",
-        'Muhammad Nabina',
-        'Nasheed-Liyakun',
-        'Muhammad Nabina',
-        'Surah_Al_Buruj',
-        'OmarHisham-al-Alaq',
+        "Nasheed-Liyakun"
     ];
 
 let songIndex = 0;
@@ -57,8 +55,8 @@ audio.addEventListener('timeupdate', (e) => {
     endM = endM < 10 ? "0" + endM : endM;
     end.textContent = `${endM}:${endS}`
 
-    let startM = Math.floor(audio.currentTime / 60);
-    let startS = Math.floor(audio.currentTime % 60);
+    var startM = Math.floor(audio.currentTime / 60);
+    var startS = Math.floor(audio.currentTime % 60);
     startS = startS < 10 ? "0" + startS : startS;
     startM = startM < 10 ? "0" + startM : startM;
     start.textContent = `${startM}:${startS}`
