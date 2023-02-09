@@ -35,6 +35,21 @@ body {
     backdrop-filter: blur(5px);
 }
 
+.tlink{
+    background: linear-gradient( 318deg, #d43636, #59feeb );
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    bottom: 50px;
+    transition: .2s ease;
+}
+.tlink:hover{
+    background: linear-gradient( 318deg, #59feeb, #d43636 );
+}
+
 .title {
     height: 82px;
     font-size: 2rem;
